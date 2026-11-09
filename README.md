@@ -1,18 +1,18 @@
 # 🚗 GroupDrive – Buy Together. Drive a Better Deal.
 
-**GroupDrive** is a group car-buying platform that helps people get better car deals by combining buyer demand. Instead of negotiating individually with dealerships, buyers interested in the same car can join a group, collectively request competitive quotations from multiple dealers, compare offers, and choose the best deal.
+**GroupDrive** is a group car-buying platform that helps people get better car deals by combining buyer demand. Instead of negotiating individually with dealerships, buyers interested in the same car can join a group, collectively request quotations from multiple dealers, compare offers, and choose the best deal.
 
-The platform connects car buyers and dealerships through a transparent, technology-driven group purchasing experience.
+The platform connects car buyers and dealerships through a transparent and collaborative purchasing experience.
 
 ---
 
 ## 🌟 Project Overview
 
-Buying a car is a major financial decision. Individual buyers often have limited negotiating power and may struggle to compare dealership offers.
+Buying a car is a major financial decision. Individual buyers often have limited negotiating power and may find it difficult to compare prices and offers from different dealerships.
 
-GroupDrive addresses this problem by bringing together multiple potential buyers interested in the same car model within a city.
+GroupDrive addresses this problem by bringing together multiple potential buyers interested in purchasing the same car within a particular location.
 
-When a buyer group reaches its target, the platform facilitates quotation requests to eligible dealerships. Dealers submit competitive offers, and buyers can compare pricing and make independent purchasing decisions.
+When a buyer group reaches its target, the platform allows administrators to send quotation requests to eligible dealerships. Dealers can submit their offers, and buyers can compare the available deals before making their own purchasing decisions.
 
 **Our Vision:** Make car buying more transparent, collaborative, and affordable.
 
@@ -20,149 +20,146 @@ When a buyer group reaches its target, the platform facilitates quotation reques
 
 ## ✨ Key Features
 
-### 👤 Buyer Features
+### 👤 Buyer Module
 
-- Secure user registration and authentication.
+- Secure user registration and login.
 - Browse cars from different manufacturers.
-- Search and filter cars by brand, model, budget, fuel type and transmission.
-- Create or join existing car-buying groups.
-- Track group participation and progress.
-- Invite friends and other interested buyers.
+- Create new car-buying groups.
+- Join existing groups based on car preferences and location.
+- Track group progress and participant count.
+- View group details and car information.
 - Compare dealership quotations.
-- View transparent on-road price breakdowns.
-- Save preferred cars and dealership offers.
-- Receive notifications about group activities and new offers.
+- Shortlist preferred offers.
+- Decline unwanted offers.
+- Select a preferred dealership offer.
+- Request dealer contact with explicit consent.
 
 ### 🤝 Group Buying System
 
-- Create groups based on car model, variant and location.
-- Join existing buyer communities.
-- Track verified participant counts.
-- Configurable group targets and deadlines.
-- Shareable group invitation links.
-- Automated group lifecycle management.
+- Create groups based on car models, variants and locations.
+- Join existing buyer groups.
+- Configurable group participant targets.
+- Track active group members.
+- Prevent duplicate group memberships.
+- Atomic group joining to prevent groups from exceeding their participant limit.
 - Group-based dealership quotation requests.
+- Track the progress of buyer groups.
 
-### 🏢 Dealer Features
+### 🏢 Dealer Module
 
-- Dedicated dealership dashboard.
-- Dealer registration and verification.
-- Manage dealership profiles and service locations.
-- Receive eligible group quotation requests.
-- Submit competitive price quotations.
-- Update and manage offers.
-- Track customer inquiries.
-- Monitor dealership performance.
+- Dealer registration and authentication.
+- Dealer verification status.
+- Dedicated dealer dashboard.
+- View incoming quotation requests.
+- Access relevant group and vehicle information.
+- Submit dealership offers.
+- Manage submitted quotations.
+- Support verified and pending dealership accounts.
 
 ### 📊 Offer Comparison
 
-Compare multiple dealership offers using:
+Buyers can compare dealership offers based on:
 
 - Ex-showroom price.
-- Registration and road tax.
+- Registration charges.
 - Insurance.
 - Dealer discounts.
 - Manufacturer discounts.
-- Accessories and additional charges.
+- Additional charges.
 - Estimated on-road price.
-- Expected delivery timeline.
-- Offer validity and conditions.
+- Offer details and conditions.
 
-### 🛡️ Admin Features
+### 🛡️ Admin Module
 
-- Manage buyers and dealerships.
-- Verify dealership accounts.
-- Manage car brands, models and variants.
+- Admin authentication.
+- Manage platform activities.
 - Monitor buyer groups.
-- Manage quotation requests and offers.
-- Review suspicious activities.
-- Manage platform settings.
-- View platform analytics and activity logs.
+- Send quotation requests to eligible dealerships.
+- Manage dealer verification.
+- Review dealership participation.
+- Maintain platform activity records.
+- Track important administrative actions through audit logs.
 
 ---
 
 ## 🔄 How GroupDrive Works
 
-1. **Discover:** Buyers browse cars and select their preferred model.
-2. **Create or Join:** Buyers create a new purchasing group or join an existing one.
-3. **Build Demand:** Interested buyers come together to reach the group target.
-4. **Request Quotes:** The platform connects qualified groups with eligible dealerships.
-5. **Receive Offers:** Dealerships submit competitive quotations.
-6. **Compare Deals:** Buyers compare transparent pricing and dealership offers.
-7. **Choose Independently:** Each buyer decides whether to proceed with a dealership.
+1. **Discover:** Buyers browse available cars and select their preferred model.
+2. **Create a Group:** A buyer creates a group with a selected car, location and participant target.
+3. **Join a Group:** Other interested buyers join the same group.
+4. **Reach the Target:** The group progresses as eligible buyers join.
+5. **Request Quotations:** The administrator sends quotation requests to eligible dealerships.
+6. **Receive Offers:** Dealerships submit their price quotations.
+7. **Compare Offers:** Buyers compare available dealership offers.
+8. **Make a Decision:** Buyers can shortlist, decline, select an offer or request dealer contact with consent.
 
-> **Note:** Group participation does not guarantee a discount or require a purchase. Every buyer makes their own final purchasing decision.
+> **Note:** Joining a group does not guarantee a discount or require a buyer to purchase a vehicle. Every buyer makes their own final decision.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 ### Frontend
 
 | Technology | Purpose |
 |---|---|
 | React.js | Building user interfaces |
-| TypeScript | Type safety |
-| Vite | Frontend development and build |
-| Tailwind CSS | Styling and responsive design |
-| shadcn/ui | Reusable UI components |
-| Lucide React | Icons |
-| React Router | Navigation |
-| TanStack Query | API data management |
-| React Hook Form | Form handling |
-| Zod | Input validation |
-| Recharts | Data visualization |
+| JavaScript | Application logic |
+| Vite | Frontend development and build tool |
+| CSS | Styling and responsive layouts |
 
 ### Backend
 
 | Technology | Purpose |
 |---|---|
 | Node.js | JavaScript runtime |
-| Express.js | Backend framework |
-| TypeScript | Type safety |
-| REST API | Client-server communication |
-| Prisma ORM | Database management |
-| JWT / Secure Cookies | Authentication |
-| Zod | Request validation |
+| Express.js | Backend framework and REST API |
+| JavaScript | Server-side application logic |
+| Mongoose | MongoDB object data modeling |
+| JWT | User authentication |
+| bcrypt | Password hashing |
+| Express Rate Limit | API request rate limiting |
 
 ### Database
 
-- **PostgreSQL** – Relational database for storing users, cars, buyer groups, dealerships and quotations.
+| Technology | Purpose |
+|---|---|
+| MongoDB | NoSQL database |
+| Mongoose | Database models and operations |
 
 ### Development & Testing Tools
 
-- Git & GitHub
-- Docker & Docker Compose
-- Vitest
-- Supertest
-- Swagger / OpenAPI
+- Git and GitHub
 - Visual Studio Code
+- npm
+- MongoDB Atlas
+- In-memory MongoDB for automated testing
 
 ---
 
 ## 🏗️ System Architecture
 
 ```text
-                    GROUPDRIVE
-                        |
-          +-------------+-------------+
-          |             |             |
-        BUYER         DEALER         ADMIN
-          |             |             |
-          +-------------+-------------+
-                        |
-                 REACT FRONTEND
-                        |
-                   REST APIs
-                        |
-                 EXPRESS BACKEND
-                        |
-          +-------------+-------------+
-          |             |             |
-       AUTH MODULE   GROUP MODULE   DEALER MODULE
-          |             |             |
-          +-------------+-------------+
-                        |
-                    PRISMA ORM
-                        |
-                   POSTGRESQL
+                     GROUPDRIVE
+                         |
+           +-------------+-------------+
+           |             |             |
+         BUYER         DEALER         ADMIN
+           |             |             |
+           +-------------+-------------+
+                         |
+                   REACT FRONTEND
+                         |
+                    REST API CALLS
+                         |
+                   EXPRESS SERVER
+                         |
+            +------------+------------+
+            |            |            |
+       AUTH MODULE   GROUP MODULE   OFFER MODULE
+            |            |            |
+            +------------+------------+
+                         |
+                     MONGOOSE
+                         |
+                      MONGODB
